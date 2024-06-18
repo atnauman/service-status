@@ -3,30 +3,48 @@ owner: atnauman # Your GitHub organization or username, where this repository li
 repo: service-status # The name of this repository
 
 sites:
-  - name: Mellite Service
-    url: https://mellite.bihealth.org/
-  - name: Geo App Service
-    url: https://geo-app.bihealth.org/
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
-    check: "tcp-ping"
-    ipv6: true
-assignees: # Users to assign downtime issues (optional)
-  - atnauman
+ # - name: EDC Gateway Charité (ids)
+ #   url:  https://ids.health-x.charite.de
+ # - name: EDC Gateway Charité (data)
+ #   url:  https://data.health-x.charite.de
+  - name: Dev Charite edc 
+    url:  https://dev-ids.health-x.charite.de/health/1
+  - name: Dev Charite idat matcher
+    url:  https://dev-ids.health-x.charite.de/health/2
+  - name: Dev Charite gateway
+    url:  https://dev-ids.health-x.charite.de/health/3
+  - name: Dev Charite gateway-iop-connection
+    url:  https://dev-ids.health-x.charite.de/health/4
+  - name: Charite edc
+    url:  https://ids.health-x.charite.de/health/1
+  - name: Charite idat matcher
+    url:  https://ids.health-x.charite.de/health/2
+  - name: Charite gateway
+    url:  https://ids.health-x.charite.de/health/3
+  - name: Charite gateway-iop-connection
+    url:  https://ids.health-x.charite.de/health/4
+  - name: Personal EDC Gateway
+    url: https://gateway.dataloft-ionos.de/docs
+  - name: Personal EDC Gateway - development
+    url: https://gateway.dev-dataloft-ionos.de/docs
+  - name: Dataloft-Catalogue
+    url: https://gxfs-catalogue.dataloft-ionos.de/participants
+ # - name: Keycloak Dataloft-Catalogue
+ #   url: https://auth.gxfs-catalogue.dataloft-ionos.de/partici
+#  - name: de.NBI Cloud Berlin
+#    url: https://denbi-cloud.bihealth.org
+#  - name: Test Broken Site
+#    url: https://thissitedoesnotexist.koj.co
+
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  #cname: demo.upptime.js.org
+  baseUrl: /service-status
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  introTitle: "**Service Status** is monitor and status page for data management group services."
+  introMessage: This status page shows **real-time** data from the listed services. No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
   navbar:
     - title: Status
       href: /
